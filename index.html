@@ -17,11 +17,11 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#213555",
-                        secondary: "#3E5879",
-                        accent: "#D8C4B6",
-                        "background-light": "#F5EFE7",
-                        "background-dark": "#0f172a",
+                        primary: "#222831",
+                        secondary: "#00ADB5",
+                        accent: "#00ADB5",
+                        "background-light": "#EEEEEE",
+                        "background-dark": "#393E46",
                     },
                     fontFamily: {
                         sans: ["Inter", "sans-serif"],
@@ -35,18 +35,6 @@
         };
     </script>
     <style>
-        .timeline-dot::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 24px;
-            bottom: -24px;
-            width: 2px;
-            background: currentColor;
-            opacity: 0.2;
-            transform: translateX(-50%);
-        }
-
         .timeline-item:last-child .timeline-dot::after {
             display: none;
         }
@@ -92,7 +80,7 @@
             <div class="timeline-item flex gap-8 group">
                 <div class="flex flex-col items-center">
                     <div
-                        class="timeline-dot relative w-12 h-12 rounded-full bg-primary text-background-light flex items-center justify-center shrink-0">
+                        class="timeline-dot relative w-12 h-12 rounded-full bg-accent text-primary flex items-center justify-center shrink-0">
                         <span class="material-symbols-outlined text-xl">code</span>
                     </div>
                 </div>
